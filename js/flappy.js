@@ -148,6 +148,10 @@ function flappyBird(){
 
             if(colidiu(passaro,barreiras)){
                 clearInterval(temporizador)
+
+                setInterval(()=>{
+                    window.location.reload()
+                },500)
             }
         },30)
     }
